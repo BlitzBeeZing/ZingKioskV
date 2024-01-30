@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "930166591167",
+    "project_id": "zing-b2b2c-kiosk",
+    "storage_bucket": "zing-b2b2c-kiosk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930166591167:android:8a379cf77f41d868e0c00a",
+        "android_client_info": {
+          "package_name": "app.zingnow.kiosk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEZ9b6bsrOq3V2c6BlzGeospCRF-8B5Ks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930166591167:android:786a3e1c006e3c47e0c00a",
+        "android_client_info": {
+          "package_name": "app.zingnow.zingkiosk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEZ9b6bsrOq3V2c6BlzGeospCRF-8B5Ks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930166591167:android:b83e16648154c053e0c00a",
+        "android_client_info": {
+          "package_name": "com.example.testoptimsation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEZ9b6bsrOq3V2c6BlzGeospCRF-8B5Ks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,95 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_dark"
+    android:layout_marginBottom="0dp"
+    android:layout_marginRight="@dimen/_6sdp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/header">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/menu_img"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/menu_img"
+            android:translationZ="999dp"
+            android:layout_centerHorizontal="true"/>
+
+
+
+
+        <RelativeLayout
+            android:layout_alignParentTop="true"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_102sdp"
+            android:background="@drawable/menu_background"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:layout_below="@+id/menu_img"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:id="@+id/item_base"
+            android:paddingHorizontal="@dimen/_4sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_52sdp"
+                android:fontFamily="@font/manrope_medium"
+                android:text="Maharaja Veg Meal"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/_7sdp"
+                android:id="@+id/item_name"
+                android:textAlignment="center"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/item_price"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/text_color_orange"
+                android:text="₹ 89"
+                android:layout_below="@+id/item_name"
+                android:fontFamily="@font/syne_bold"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textSize="@dimen/_9sdp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/orange_background_rounded"
+            android:layout_centerHorizontal="true"
+            android:translationZ="999dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/_138sdp"
+            android:id="@+id/add_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD"
+                android:textSize="@dimen/_8sdp"
+                android:textColor="@color/white"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_4sdp"
+                android:fontFamily="@font/syne_bold"
+                android:id="@+id/add_text"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

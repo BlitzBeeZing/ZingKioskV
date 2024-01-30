@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/rounded_corner_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:topLeftRadius="@dimen/_120sdp"
+        android:topRightRadius="@dimen/_120sdp"
+        android:bottomLeftRadius="@dimen/_120sdp"
+        android:bottomRightRadius="@dimen/_120sdp"/>
+    <solid android:color="@color/text_color_orange"/>
+
+</shape>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.QRPaymentScreen"
+    android:background="@color/white"
+    android:keepScreenOn="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/checkout_header"
+            android:scaleType="fitXY"
+            android:id="@+id/header_image"/>
+        <ImageView
+            android:layout_width="@dimen/_86sdp"
+            android:layout_height="@dimen/_86sdp"
+            android:id="@+id/zing_logo"
+            android:src="@drawable/zing_asterisk_orange_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_below="@+id/zing_logo"
+                android:text="Pay with UPI QR"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/syne_bold"
+                android:textColor="@color/background_dark"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/paywithqr_text"/>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_below="@+id/paywithqr_text"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:layout_marginTop="@dimen/_18sdp"/>
+
+        <View
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_below="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:id="@+id/divider"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:text="Scan the QR using any app"
+                android:layout_below="@id/divider"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:fontFamily="@font/syne_semibold"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/scan_qr_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:text="valid for 15:00 min"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/scan_qr_text"
+                android:fontFamily="@font/syne_semibold"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#EE0000"
+                android:id="@+id/timer_time"/>
+        
+        <ImageView
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_70sdp"
+                android:layout_below="@+id/timer_time"
+                android:src="@drawable/payment_apps"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/payment_apps_img"
+            android:layout_marginTop="@dimen/_12sdp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cancel_transactions"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/cancel_button"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:onClick="cancelTransaction">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                        android:text="Cancel Transaction"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/syne_bold"
+                        android:textColor="#EE0000"/>
+
+
+
+
+        </RelativeLayout>
+
+
+        
+
+
+
+
+
+
+</RelativeLayout>

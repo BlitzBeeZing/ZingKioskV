@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.CartScreen"
+    android:background="@color/background_dark">
+
+    <ImageView
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/zing_asterisk_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:id="@+id/zing_logo_asterisk"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zing_logo_asterisk"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:layout_above="@id/bottom_layout">
+
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/back_btn"
+            android:id="@+id/back_btn"
+            android:onClick="backClicked"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back_btn"
+            android:text="My Order"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/_24sdp"
+            android:fontFamily="@font/syne_bold"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:letterSpacing="0.02"
+            android:id="@+id/my_order_txt"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_order_txt"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:id="@+id/cart_recyclerview"
+            android:layout_marginBottom="@dimen/_14sdp" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:id="@+id/bottom_layout">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#525252"
+            android:id="@+id/divider_3"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total (₹ 239+ 5% GST)"
+            android:layout_below="@+id/divider_3"
+            android:fontFamily="@font/manrope_medium"
+            android:textColor="#9F9F8E"
+            android:textSize="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/total_txt"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_txt"
+            android:id="@+id/total_price"
+            android:text="₹ 239"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/manrope_bold"
+            android:layout_marginTop="@dimen/_3sdp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/divider_3"
+            android:background="@drawable/orange_background_rounded"
+            android:paddingHorizontal="@dimen/_6sdp"
+            android:paddingVertical="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/checkout"
+            android:onClick="checkOut"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Checkout"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/_8sdp"
+                android:fontFamily="@font/syne_bold"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/jost_medium</item>
+        <item>@font/jost_semibold</item>
+        <item>@font/manrope_bold</item>
+        <item>@font/manrope_medium</item>
+        <item>@font/manrope_semibold</item>
+        <item>@font/syne</item>
+        <item>@font/syne_bold</item>
+        <item>@font/syne_semibold</item>
+    </array>
+</resources>

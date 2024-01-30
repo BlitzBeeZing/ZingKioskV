@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_dark"
+    android:paddingBottom="@dimen/_4sdp"
+    android:id="@+id/list_layout">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="#525252"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/divider_1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider_1"
+        android:layout_marginTop="@dimen/_10sdp">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/delivery_slot_selected"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/delivery_slot_selected"
+            android:layout_marginLeft="@dimen/_4sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Default Delivery Slot"
+                android:textColor="@color/text_color_light"
+                android:fontFamily="@font/syne_semibold"
+                android:letterSpacing="0.02"
+                android:textSize="@dimen/_11sdp"
+                android:id="@+id/delivery_slot_text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/delivery_slot_text"
+                android:text="FREE"
+                android:id="@+id/free_text"
+                android:fontFamily="@font/manrope_semibold"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/_11sdp"/>
+            <TextView
+                android:layout_width="@dimen/_170sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/free_text"
+                android:text="Delivery to Mensa office, 1st Floor, Vaishnavi Towers"
+                android:fontFamily="@font/manrope_medium"
+                android:id="@+id/delivery_address"
+                android:textSize="@dimen/_9sdp"
+                android:textColor="#58584e" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="1:00 - 1:30 PM"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_color_light"
+            android:fontFamily="@font/manrope_semibold"
+            android:textSize="@dimen/_11sdp"
+            android:id="@+id/timeslot"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

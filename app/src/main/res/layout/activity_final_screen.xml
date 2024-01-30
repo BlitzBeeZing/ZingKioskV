@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.FinalScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/background_layout">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:src="@drawable/success_png"
+                android:id="@+id/status_image"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/status_image"
+                android:text="Transaction Successful"
+                android:textColor="#10100E"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/syne_bold"
+                android:textSize="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/status_text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check your whatsapp for more details"
+                android:layout_below="@+id/status_text"
+                android:id="@+id/status_description"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/manrope_medium"
+                android:textSize="@dimen/_8sdp"
+                android:textColor="#10100E"
+                android:layout_marginTop="@dimen/_6sdp"/>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dark_orange_background_rounded"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:id="@+id/next_btn"
+            android:layout_alignParentBottom="true"
+            android:onClick="navigateToHome"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proceed to Home (10s)"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/text_color_light"
+                android:fontFamily="@font/syne_bold"
+                android:textSize="@dimen/_10sdp"
+                android:id="@+id/procced_text"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

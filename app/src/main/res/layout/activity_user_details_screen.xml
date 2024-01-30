@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.UserDetailsScreen"
+    android:background="@color/background_dark">
+
+    <ImageView
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/zing_asterisk_orange_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:id="@+id/zing_logo_asterisk"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zing_logo_asterisk"
+        android:layout_marginTop="@dimen/_26sdp"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:id="@+id/user_details">
+
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/back_btn"
+            android:id="@+id/back_btn"
+            android:onClick="onBackClicked"/>
+
+        <TextView
+            android:id="@+id/my_order_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back_btn"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/syne_bold"
+            android:letterSpacing="0.01"
+            android:text="Final steps"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/_22sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/my_order_txt"
+            android:background="#525252"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/divider_1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_1"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@color/background_dark"
+            android:fontFamily="@font/jost_medium"
+            android:hint="Your Name"
+            android:textColor="@color/text_color_light"
+            android:textColorHint="#87877a"
+            android:textSize="@dimen/_11sdp"
+            android:id="@+id/user_name"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/user_name"
+            android:background="#525252"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/divider_2"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_2"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@color/background_dark"
+            android:fontFamily="@font/jost_medium"
+            android:inputType="number"
+            android:hint="Your 10 Digit WhatsApp number"
+            android:textColor="@color/text_color_light"
+            android:textColorHint="#87877a"
+            android:textSize="@dimen/_11sdp"
+            android:id="@+id/user_phoneno"
+            android:imeOptions="actionDone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/user_phoneno"
+            android:background="#525252"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/divider_3"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_details"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:id="@+id/delivery_details"
+        android:layout_above="@+id/bottom_next_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery"
+            android:id="@+id/delivery_text"
+            android:textSize="@dimen/_22sdp"
+            android:textColor="@color/text_color_light"
+            android:fontFamily="@font/syne_bold"
+            android:letterSpacing="0.01"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/delivery_recyclerview"
+            android:layout_below="@+id/delivery_text"
+            android:layout_marginTop="@dimen/_4sdp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:id="@+id/bottom_next_layout">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#525252"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:id="@+id/divider_4"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/orange_background_rounded"
+            android:layout_below="@+id/divider_4"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            android:id="@+id/next_btn"
+            android:onClick="initiateCheckout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/text_color_light"
+                android:fontFamily="@font/syne_bold"
+                android:textSize="@dimen/_10sdp"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

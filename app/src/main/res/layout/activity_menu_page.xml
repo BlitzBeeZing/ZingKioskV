@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.MenuPage"
+    android:background="@color/background_dark"
+    android:paddingLeft="@dimen/_24sdp"
+    android:paddingRight="@dimen/_18sdp"
+    android:keepScreenOn="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_34sdp"
+        android:id="@+id/header">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/leftAligned">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/syne_bold"
+                android:text="Hey,"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/_24sdp"
+                android:id="@+id/heading_text1"/>
+
+            <TextView
+                android:id="@+id/heading_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading_text1"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/syne"
+                android:text="what's up!"
+                android:textColor="@color/text_color_light"
+                android:textSize="@dimen/_24sdp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/support_details"
+            android:layout_centerVertical="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/company_name_background"
+                android:paddingRight="@dimen/_6sdp"
+                android:paddingLeft="@dimen/_4sdp"
+                android:paddingVertical="@dimen/_4sdp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/company_location_logo_background"
+                    android:id="@+id/support_logo_background"
+                    android:padding="@dimen/_3sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:src="@drawable/support"
+                        android:layout_marginTop="-2dp"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91 863-708-5750"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/support_logo_background"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:fontFamily="@font/manrope_semibold"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/_8sdp"
+                    android:id="@+id/support_phoneno"/>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/menu_recycler_view"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/_114sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:id="@+id/checkout_btn"
+        android:translationZ="999dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@drawable/view_cart_background"
+            android:clipToOutline="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/view_cart"
+            android:layout_centerVertical="true"
+            android:onClick="viewCart">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/circular_background_lightback"
+                android:layout_alignParentLeft="true"
+                android:clipToOutline="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:id="@+id/view_cart_img">
+
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/cart_image" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/view_cart_img"
+                android:id="@+id/text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Modify Order"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:fontFamily="@font/syne_bold"
+                    android:id="@+id/modify_text"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_9sdp"
+                    android:layout_height="@dimen/_9sdp"
+                    android:src="@drawable/next_arrow"
+                    android:layout_toEndOf="@id/modify_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_5sdp"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
